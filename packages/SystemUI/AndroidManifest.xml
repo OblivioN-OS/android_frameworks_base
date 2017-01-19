@@ -485,16 +485,10 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".settings.NotificationBrightnessDialog"
-            android:label="@string/quick_settings_brightness_dialog_title"
-            android:theme="@android:style/Theme.DeviceDefault.Dialog"
-            android:finishOnCloseSystemDialogs="true"
-            android:launchMode="singleInstance"
-            android:excludeFromRecents="true"
-            android:exported="true">
+        <activity android:name=".DaylightHeaderDefault"
+                  android:label="Default" >
             <intent-filter>
-                <action android:name="android.intent.action.SHOW_NOTIFICATION_BRIGHTNESS_DIALOG" />
+                <action android:name="org.omnirom.DaylightHeaderPack" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
